@@ -11,7 +11,7 @@ namespace InterfaceAbstractDemo.Entities
         {
             BaseCustomerManager customerManager = new StrabuckCustomerManager(new MernisServiceAdapter());
             //Kimlik bilgileri
-            customerManager.Save(new Customer {DateOfBirth = new DateTime(1999,8,11), FirstName="Emrehan",LastName="Aydın", NationalityId ="182" });
+            customerManager.Save(new Customer {DateOfBirth = new DateTime(1999,8,11), FirstName="Emrehan",LastName="Aydın", NationalityId =" olmbakgit! :) " });
             // me :)
             Console.ReadLine();
         }
