@@ -7,17 +7,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MernisServiceReference
+namespace MenrisServiceReference
 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://tckimlik.nvi.gov.tr/WS", ConfigurationName="MernisServiceReference.KPSPublicSoap")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://tckimlik.nvi.gov.tr/WS", ConfigurationName="MenrisServiceReference.KPSPublicSoap")]
     public interface KPSPublicSoap
     {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tckimlik.nvi.gov.tr/WS/TCKimlikNoDogrula", ReplyAction="*")]
-        System.Threading.Tasks.Task<MernisServiceReference.TCKimlikNoDogrulaResponse> TCKimlikNoDogrulaAsync(MernisServiceReference.TCKimlikNoDogrulaRequest request);
+        System.Threading.Tasks.Task<MenrisServiceReference.TCKimlikNoDogrulaResponse> TCKimlikNoDogrulaAsync(MenrisServiceReference.TCKimlikNoDogrulaRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -27,13 +27,13 @@ namespace MernisServiceReference
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="TCKimlikNoDogrula", Namespace="http://tckimlik.nvi.gov.tr/WS", Order=0)]
-        public MernisServiceReference.TCKimlikNoDogrulaRequestBody Body;
+        public MenrisServiceReference.TCKimlikNoDogrulaRequestBody Body;
         
         public TCKimlikNoDogrulaRequest()
         {
         }
         
-        public TCKimlikNoDogrulaRequest(MernisServiceReference.TCKimlikNoDogrulaRequestBody Body)
+        public TCKimlikNoDogrulaRequest(MenrisServiceReference.TCKimlikNoDogrulaRequestBody Body)
         {
             this.Body = Body;
         }
@@ -77,13 +77,13 @@ namespace MernisServiceReference
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="TCKimlikNoDogrulaResponse", Namespace="http://tckimlik.nvi.gov.tr/WS", Order=0)]
-        public MernisServiceReference.TCKimlikNoDogrulaResponseBody Body;
+        public MenrisServiceReference.TCKimlikNoDogrulaResponseBody Body;
         
         public TCKimlikNoDogrulaResponse()
         {
         }
         
-        public TCKimlikNoDogrulaResponse(MernisServiceReference.TCKimlikNoDogrulaResponseBody Body)
+        public TCKimlikNoDogrulaResponse(MenrisServiceReference.TCKimlikNoDogrulaResponseBody Body)
         {
             this.Body = Body;
         }
@@ -109,13 +109,13 @@ namespace MernisServiceReference
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    public interface KPSPublicSoapChannel : MernisServiceReference.KPSPublicSoap, System.ServiceModel.IClientChannel
+    public interface KPSPublicSoapChannel : MenrisServiceReference.KPSPublicSoap, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    public partial class KPSPublicSoapClient : System.ServiceModel.ClientBase<MernisServiceReference.KPSPublicSoap>, MernisServiceReference.KPSPublicSoap
+    public partial class KPSPublicSoapClient : System.ServiceModel.ClientBase<MenrisServiceReference.KPSPublicSoap>, MenrisServiceReference.KPSPublicSoap
     {
         
         /// <summary>
@@ -151,7 +151,7 @@ namespace MernisServiceReference
         {
         }
         
-        public System.Threading.Tasks.Task<MernisServiceReference.TCKimlikNoDogrulaResponse> TCKimlikNoDogrulaAsync(MernisServiceReference.TCKimlikNoDogrulaRequest request)
+        public System.Threading.Tasks.Task<MenrisServiceReference.TCKimlikNoDogrulaResponse> TCKimlikNoDogrulaAsync(MenrisServiceReference.TCKimlikNoDogrulaRequest request)
         {
             return base.Channel.TCKimlikNoDogrulaAsync(request);
         }

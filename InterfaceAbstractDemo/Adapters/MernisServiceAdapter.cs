@@ -1,5 +1,5 @@
 ﻿using InterfaceAbstractDemo.Abstract;
-using MernisServiceReference;
+using MenrisServiceReference;
 using System;
 using System.Collections.Generic;
 using System.Text;
