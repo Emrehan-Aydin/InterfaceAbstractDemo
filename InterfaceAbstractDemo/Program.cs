@@ -9,7 +9,7 @@ namespace InterfaceAbstractDemo.Entities
     {
         static void Main(string[] args)
         {
-            BaseCustomerManager customerManager = new StrabuckCustomerManager(new MernisServiceAdapter());
+            BaseCustomerManager customerManager = new NeroCustomerManager(new MernisServiceAdapter());
             //Kimlik bilgileri
             customerManager.Save(new Customer {DateOfBirth = new DateTime(1999,8,11), FirstName="Emrehan",LastName="Aydın", NationalityId =" olmbakgit! :) " });
             // me :)
